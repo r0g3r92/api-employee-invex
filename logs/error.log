@@ -1,0 +1,45 @@
+[api-employee-invex] - 2025-04-26 11:57:08.661 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.invex.employee.adapter.in.api.EmployeeController required a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' in your configuration.
+
+[api-employee-invex] - 2025-04-26 11:58:03.046 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.invex.employee.adapter.in.api.EmployeeController required a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' in your configuration.
+
+[api-employee-invex] - 2025-04-26 12:01:43.680 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.invex.employee.adapter.in.api.EmployeeController required a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' in your configuration.
+

@@ -1,0 +1,797 @@
+[api-employee-invex] - 2025-04-26 02:20:54.141 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 02:20:54.399 [main] INFO  c.invex.employee.EmployeeApplication.logStarting() - Starting EmployeeApplication using Java 17.0.14 with PID 33930 (/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 02:20:54.402 [main] INFO  c.invex.employee.EmployeeApplication.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 02:20:55.759 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[api-employee-invex] - 2025-04-26 02:20:55.900 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Finished Spring Data repository scanning in 122 ms. Found 1 JPA repository interface.
+[api-employee-invex] - 2025-04-26 02:20:56.760 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize() - Tomcat initialized with port 8082 (http)
+[api-employee-invex] - 2025-04-26 02:20:56.780 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Initializing ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 02:20:56.784 [main] INFO  o.a.catalina.core.StandardService.log() - Starting service [Tomcat]
+[api-employee-invex] - 2025-04-26 02:20:56.785 [main] INFO  o.a.catalina.core.StandardEngine.log() - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[api-employee-invex] - 2025-04-26 02:20:56.881 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring embedded WebApplicationContext
+[api-employee-invex] - 2025-04-26 02:20:56.884 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext() - Root WebApplicationContext: initialization completed in 2362 ms
+[api-employee-invex] - 2025-04-26 02:20:57.160 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation() - HHH000204: Processing PersistenceUnitInfo [name: default]
+[api-employee-invex] - 2025-04-26 02:20:57.252 [main] INFO  org.hibernate.Version.logVersion() - HHH000412: Hibernate ORM core version 6.6.13.Final
+[api-employee-invex] - 2025-04-26 02:20:57.313 [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService() - HHH000026: Second-level cache disabled
+[api-employee-invex] - 2025-04-26 02:20:57.640 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer() - No LoadTimeWeaver setup: ignoring JPA class transformer
+[api-employee-invex] - 2025-04-26 02:20:57.683 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Starting...
+[api-employee-invex] - 2025-04-26 02:20:57.915 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast() - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@34f23816
+[api-employee-invex] - 2025-04-26 02:20:57.918 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Start completed.
+[api-employee-invex] - 2025-04-26 02:20:57.958 [main] WARN  org.hibernate.orm.deprecation.constructDialect() - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[api-employee-invex] - 2025-04-26 02:20:57.995 [main] INFO  o.hibernate.orm.connections.pooling.initiateService() - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[api-employee-invex] - 2025-04-26 02:20:59.200 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService() - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[api-employee-invex] - 2025-04-26 02:20:59.284 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[api-employee-invex] - 2025-04-26 02:20:59.730 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[api-employee-invex] - 2025-04-26 02:21:00.167 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Starting ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 02:21:00.201 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start() - Tomcat started on port 8082 (http) with context path '/'
+[api-employee-invex] - 2025-04-26 02:21:00.222 [main] INFO  c.invex.employee.EmployeeApplication.logStarted() - Started EmployeeApplication in 7.07 seconds (process running for 7.814)
+[api-employee-invex] - 2025-04-26 02:21:33.573 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 02:21:33.574 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Initializing Servlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 02:21:33.577 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Completed initialization in 3 ms
+[api-employee-invex] - 2025-04-26 02:21:33.800 [http-nio-8082-exec-2] INFO  c.i.e.a.s.e.UpdateEmployeeService.updateEmployee() - Execute service to update employee.
+[api-employee-invex] - 2025-04-26 02:21:33.801 [http-nio-8082-exec-2] INFO  c.i.e.a.s.e.UpdateEmployeeService.updateEmployee() - Validate if employee object isn't null.
+[api-employee-invex] - 2025-04-26 02:21:33.801 [http-nio-8082-exec-2] INFO  c.i.e.a.s.e.UpdateEmployeeService.updateEmployee() - Validate if employee id isn't null.
+[api-employee-invex] - 2025-04-26 03:20:15.251 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 03:20:15.425 [main] INFO  c.invex.employee.EmployeeApplication.logStarting() - Starting EmployeeApplication using Java 17.0.14 with PID 56489 (/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 03:20:15.428 [main] INFO  c.invex.employee.EmployeeApplication.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 03:20:17.387 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[api-employee-invex] - 2025-04-26 03:20:17.603 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Finished Spring Data repository scanning in 201 ms. Found 1 JPA repository interface.
+[api-employee-invex] - 2025-04-26 03:20:18.786 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize() - Tomcat initialized with port 8082 (http)
+[api-employee-invex] - 2025-04-26 03:20:18.812 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Initializing ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 03:20:18.818 [main] INFO  o.a.catalina.core.StandardService.log() - Starting service [Tomcat]
+[api-employee-invex] - 2025-04-26 03:20:18.822 [main] INFO  o.a.catalina.core.StandardEngine.log() - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[api-employee-invex] - 2025-04-26 03:20:18.999 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring embedded WebApplicationContext
+[api-employee-invex] - 2025-04-26 03:20:19.007 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext() - Root WebApplicationContext: initialization completed in 3458 ms
+[api-employee-invex] - 2025-04-26 03:20:19.467 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation() - HHH000204: Processing PersistenceUnitInfo [name: default]
+[api-employee-invex] - 2025-04-26 03:20:19.607 [main] INFO  org.hibernate.Version.logVersion() - HHH000412: Hibernate ORM core version 6.6.13.Final
+[api-employee-invex] - 2025-04-26 03:20:19.693 [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService() - HHH000026: Second-level cache disabled
+[api-employee-invex] - 2025-04-26 03:20:20.153 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer() - No LoadTimeWeaver setup: ignoring JPA class transformer
+[api-employee-invex] - 2025-04-26 03:20:20.211 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Starting...
+[api-employee-invex] - 2025-04-26 03:20:20.588 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast() - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4d8056bf
+[api-employee-invex] - 2025-04-26 03:20:20.594 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Start completed.
+[api-employee-invex] - 2025-04-26 03:20:20.657 [main] WARN  org.hibernate.orm.deprecation.constructDialect() - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[api-employee-invex] - 2025-04-26 03:20:20.720 [main] INFO  o.hibernate.orm.connections.pooling.initiateService() - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[api-employee-invex] - 2025-04-26 03:20:22.242 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService() - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[api-employee-invex] - 2025-04-26 03:20:22.359 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[api-employee-invex] - 2025-04-26 03:20:23.613 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[api-employee-invex] - 2025-04-26 03:20:25.023 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Starting ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 03:20:25.094 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start() - Tomcat started on port 8082 (http) with context path '/'
+[api-employee-invex] - 2025-04-26 03:20:25.134 [main] INFO  c.invex.employee.EmployeeApplication.logStarted() - Started EmployeeApplication in 10.711 seconds (process running for 11.949)
+[api-employee-invex] - 2025-04-26 03:20:47.990 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 03:20:47.991 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Initializing Servlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 03:20:47.996 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Completed initialization in 5 ms
+[api-employee-invex] - 2025-04-26 03:20:50.231 [http-nio-8082-exec-10] INFO  o.s.api.AbstractOpenApiResource.getOpenApi() - Init duration for springdoc-openapi is: 1132 ms
+[api-employee-invex] - 2025-04-26 03:22:45.389 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 03:22:45.587 [main] INFO  c.invex.employee.EmployeeApplication.logStarting() - Starting EmployeeApplication using Java 17.0.14 with PID 57393 (/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 03:22:45.590 [main] INFO  c.invex.employee.EmployeeApplication.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 03:22:47.639 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[api-employee-invex] - 2025-04-26 03:22:47.863 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Finished Spring Data repository scanning in 205 ms. Found 1 JPA repository interface.
+[api-employee-invex] - 2025-04-26 03:22:49.055 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize() - Tomcat initialized with port 8082 (http)
+[api-employee-invex] - 2025-04-26 03:22:49.085 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Initializing ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 03:22:49.094 [main] INFO  o.a.catalina.core.StandardService.log() - Starting service [Tomcat]
+[api-employee-invex] - 2025-04-26 03:22:49.098 [main] INFO  o.a.catalina.core.StandardEngine.log() - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[api-employee-invex] - 2025-04-26 03:22:49.241 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring embedded WebApplicationContext
+[api-employee-invex] - 2025-04-26 03:22:49.245 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext() - Root WebApplicationContext: initialization completed in 3541 ms
+[api-employee-invex] - 2025-04-26 03:22:49.577 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation() - HHH000204: Processing PersistenceUnitInfo [name: default]
+[api-employee-invex] - 2025-04-26 03:22:49.676 [main] INFO  org.hibernate.Version.logVersion() - HHH000412: Hibernate ORM core version 6.6.13.Final
+[api-employee-invex] - 2025-04-26 03:22:49.744 [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService() - HHH000026: Second-level cache disabled
+[api-employee-invex] - 2025-04-26 03:22:50.165 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer() - No LoadTimeWeaver setup: ignoring JPA class transformer
+[api-employee-invex] - 2025-04-26 03:22:50.219 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Starting...
+[api-employee-invex] - 2025-04-26 03:22:50.507 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast() - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@48b2dbc4
+[api-employee-invex] - 2025-04-26 03:22:50.510 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Start completed.
+[api-employee-invex] - 2025-04-26 03:22:50.554 [main] WARN  org.hibernate.orm.deprecation.constructDialect() - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[api-employee-invex] - 2025-04-26 03:22:50.612 [main] INFO  o.hibernate.orm.connections.pooling.initiateService() - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[api-employee-invex] - 2025-04-26 03:22:52.085 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService() - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[api-employee-invex] - 2025-04-26 03:22:52.220 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[api-employee-invex] - 2025-04-26 03:22:53.147 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[api-employee-invex] - 2025-04-26 03:22:53.935 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Starting ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 03:22:54.016 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start() - Tomcat started on port 8082 (http) with context path '/'
+[api-employee-invex] - 2025-04-26 03:22:54.093 [main] INFO  c.invex.employee.EmployeeApplication.logStarted() - Started EmployeeApplication in 9.631 seconds (process running for 10.392)
+[api-employee-invex] - 2025-04-26 03:24:32.531 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 03:24:32.531 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Initializing Servlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 03:24:32.536 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Completed initialization in 4 ms
+[api-employee-invex] - 2025-04-26 03:25:08.217 [http-nio-8082-exec-10] INFO  o.s.api.AbstractOpenApiResource.getOpenApi() - Init duration for springdoc-openapi is: 1145 ms
+[api-employee-invex] - 2025-04-26 11:28:46.767 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 11:28:46.926 [main] INFO  c.invex.employee.EmployeeApplication.logStarting() - Starting EmployeeApplication using Java 21.0.7 with PID 26509 (/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 11:28:46.930 [main] INFO  c.invex.employee.EmployeeApplication.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 11:28:49.124 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[api-employee-invex] - 2025-04-26 11:28:49.247 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+[api-employee-invex] - 2025-04-26 11:28:50.149 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize() - Tomcat initialized with port 8082 (http)
+[api-employee-invex] - 2025-04-26 11:28:50.189 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Initializing ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 11:28:50.194 [main] INFO  o.a.catalina.core.StandardService.log() - Starting service [Tomcat]
+[api-employee-invex] - 2025-04-26 11:28:50.195 [main] INFO  o.a.catalina.core.StandardEngine.log() - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[api-employee-invex] - 2025-04-26 11:28:50.334 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring embedded WebApplicationContext
+[api-employee-invex] - 2025-04-26 11:28:50.336 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext() - Root WebApplicationContext: initialization completed in 3287 ms
+[api-employee-invex] - 2025-04-26 11:28:50.654 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation() - HHH000204: Processing PersistenceUnitInfo [name: default]
+[api-employee-invex] - 2025-04-26 11:28:50.737 [main] INFO  org.hibernate.Version.logVersion() - HHH000412: Hibernate ORM core version 6.6.13.Final
+[api-employee-invex] - 2025-04-26 11:28:50.776 [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService() - HHH000026: Second-level cache disabled
+[api-employee-invex] - 2025-04-26 11:28:51.164 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer() - No LoadTimeWeaver setup: ignoring JPA class transformer
+[api-employee-invex] - 2025-04-26 11:28:51.210 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Starting...
+[api-employee-invex] - 2025-04-26 11:28:51.675 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast() - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@459d2ee6
+[api-employee-invex] - 2025-04-26 11:28:51.678 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Start completed.
+[api-employee-invex] - 2025-04-26 11:28:52.039 [main] WARN  org.hibernate.orm.deprecation.constructDialect() - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[api-employee-invex] - 2025-04-26 11:28:52.109 [main] INFO  o.hibernate.orm.connections.pooling.initiateService() - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[api-employee-invex] - 2025-04-26 11:28:53.685 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService() - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[api-employee-invex] - 2025-04-26 11:28:54.655 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[api-employee-invex] - 2025-04-26 11:28:55.349 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[api-employee-invex] - 2025-04-26 11:28:56.152 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Starting ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 11:28:56.186 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start() - Tomcat started on port 8082 (http) with context path '/'
+[api-employee-invex] - 2025-04-26 11:28:56.210 [main] INFO  c.invex.employee.EmployeeApplication.logStarted() - Started EmployeeApplication in 10.256 seconds (process running for 12.079)
+[api-employee-invex] - 2025-04-26 11:29:16.041 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 11:29:16.042 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Initializing Servlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 11:29:16.044 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 11:29:17.996 [http-nio-8082-exec-9] INFO  o.s.api.AbstractOpenApiResource.getOpenApi() - Init duration for springdoc-openapi is: 878 ms
+[api-employee-invex] - 2025-04-26 11:57:06.799 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 11:57:07.013 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 37876 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 11:57:07.016 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 11:57:08.596 [main] WARN  o.s.w.c.s.GenericWebApplicationContext.refresh() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController' defined in file [/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes/com/invex/employee/adapter/in/api/EmployeeController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[api-employee-invex] - 2025-04-26 11:57:08.620 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger.logMessage() - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[api-employee-invex] - 2025-04-26 11:57:08.661 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.invex.employee.adapter.in.api.EmployeeController required a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' in your configuration.
+
+[api-employee-invex] - 2025-04-26 11:57:08.670 [main] WARN  o.s.test.context.TestContextManager.prepareTestInstance() - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.invex.employee.adapter.in.EmployeeControllerTest@537b3b2e]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@64a1116a testClass = com.invex.employee.adapter.in.EmployeeControllerTest, locations = [], classes = [com.invex.employee.EmployeeApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@11e17893 key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@9816741, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@565f390, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@64b0598, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@50029372, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7f2cfe3f, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@baf63a53, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@361cd213, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@93081b6, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@1c5c8607], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:155)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:111)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController' defined in file [/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes/com/invex/employee/adapter/in/api/EmployeeController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1462)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2279)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 101 common frames omitted
+[api-employee-invex] - 2025-04-26 11:58:01.325 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 11:58:01.400 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 38478 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 11:58:01.403 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 11:58:02.962 [main] WARN  o.s.w.c.s.GenericWebApplicationContext.refresh() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController' defined in file [/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes/com/invex/employee/adapter/in/api/EmployeeController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[api-employee-invex] - 2025-04-26 11:58:02.998 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger.logMessage() - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[api-employee-invex] - 2025-04-26 11:58:03.046 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.invex.employee.adapter.in.api.EmployeeController required a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' in your configuration.
+
+[api-employee-invex] - 2025-04-26 11:58:03.059 [main] WARN  o.s.test.context.TestContextManager.prepareTestInstance() - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.invex.employee.adapter.in.EmployeeControllerTest@41fc0084]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@69feb4d9 testClass = com.invex.employee.adapter.in.EmployeeControllerTest, locations = [], classes = [com.invex.employee.EmployeeApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@37c1cfa key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@9816741, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@565f390, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@64b0598, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@50029372, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7f2cfe3f, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@baf63a53, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@361cd213, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@93081b6, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@1c5c8607], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:155)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:111)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController' defined in file [/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes/com/invex/employee/adapter/in/api/EmployeeController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1462)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2279)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 101 common frames omitted
+[api-employee-invex] - 2025-04-26 12:01:41.412 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:01:41.586 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 39998 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:01:41.588 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:01:43.612 [main] WARN  o.s.w.c.s.GenericWebApplicationContext.refresh() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController' defined in file [/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes/com/invex/employee/adapter/in/api/EmployeeController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[api-employee-invex] - 2025-04-26 12:01:43.640 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger.logMessage() - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[api-employee-invex] - 2025-04-26 12:01:43.680 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter.report() - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.invex.employee.adapter.in.api.EmployeeController required a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' in your configuration.
+
+[api-employee-invex] - 2025-04-26 12:01:43.691 [main] WARN  o.s.test.context.TestContextManager.prepareTestInstance() - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.invex.employee.adapter.in.EmployeeControllerTest@1544ded3]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@11e17893 testClass = com.invex.employee.adapter.in.EmployeeControllerTest, locations = [], classes = [com.invex.employee.EmployeeApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@19eea77c key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@9816741, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@565f390, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@64b0598, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@50029372, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@7f2cfe3f, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@baf63a53, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@361cd213, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@93081b6, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@1c5c8607], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:155)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:111)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:159)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:194)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeController' defined in file [/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes/com/invex/employee/adapter/in/api/EmployeeController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1387)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1224)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1221)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1122)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:144)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1462)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:563)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:144)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:110)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.invex.employee.application.service.employee.CreateEmployeeService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2279)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1702)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1627)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 101 common frames omitted
+[api-employee-invex] - 2025-04-26 12:08:14.877 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:08:14.950 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 42534 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:08:14.956 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:08:18.175 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:08:18.176 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:08:18.182 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 12:08:18.248 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 3.907 seconds (process running for 5.608)
+[api-employee-invex] - 2025-04-26 12:11:03.927 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:11:04.013 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 43665 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:11:04.015 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:11:06.757 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:11:06.758 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:11:06.761 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 12:11:06.818 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 3.406 seconds (process running for 5.102)
+[api-employee-invex] - 2025-04-26 12:15:59.097 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:15:59.214 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 45485 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:15:59.219 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:16:02.698 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:16:02.699 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:16:02.706 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 3 ms
+[api-employee-invex] - 2025-04-26 12:16:02.755 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 4.231 seconds (process running for 6.096)
+[api-employee-invex] - 2025-04-26 12:16:33.672 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:16:33.743 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 45933 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:16:33.745 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:16:36.738 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:16:36.741 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:16:36.750 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 3 ms
+[api-employee-invex] - 2025-04-26 12:16:36.870 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 3.667 seconds (process running for 5.644)
+[api-employee-invex] - 2025-04-26 12:26:56.030 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:26:56.142 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 49610 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:26:56.145 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:26:59.692 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:26:59.694 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:26:59.700 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 12:26:59.753 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 4.278 seconds (process running for 6.106)
+[api-employee-invex] - 2025-04-26 12:27:44.410 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:27:44.553 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 50089 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:27:44.559 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:27:48.208 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:27:48.210 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:27:48.216 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 12:27:48.257 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 4.679 seconds (process running for 7.06)
+[api-employee-invex] - 2025-04-26 12:28:52.989 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:28:53.110 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 50763 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:28:53.113 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:28:56.933 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:28:56.934 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:28:56.941 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 3 ms
+[api-employee-invex] - 2025-04-26 12:28:57.008 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 4.715 seconds (process running for 6.93)
+[api-employee-invex] - 2025-04-26 12:33:26.504 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:33:26.622 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 52431 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:33:26.625 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:33:29.789 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:33:29.790 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:33:29.794 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 12:33:29.826 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 3.911 seconds (process running for 5.674)
+[api-employee-invex] - 2025-04-26 12:37:36.705 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:37:36.770 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarting() - Starting EmployeeControllerTest using Java 17.0.15 with PID 53993 (started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:37:36.773 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:37:40.210 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext.log() - Initializing Spring TestDispatcherServlet ''
+[api-employee-invex] - 2025-04-26 12:37:40.213 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Initializing Servlet ''
+[api-employee-invex] - 2025-04-26 12:37:40.219 [main] INFO  o.s.t.w.s.TestDispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 12:37:40.264 [main] INFO  c.i.e.a.in.EmployeeControllerTest.logStarted() - Started EmployeeControllerTest in 4.164 seconds (process running for 5.896)
+[api-employee-invex] - 2025-04-26 12:44:11.075 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:44:11.308 [main] INFO  c.invex.employee.EmployeeApplication.logStarting() - Starting EmployeeApplication using Java 21.0.7 with PID 56261 (/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:44:11.311 [main] INFO  c.invex.employee.EmployeeApplication.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:44:13.512 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[api-employee-invex] - 2025-04-26 12:44:13.711 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Finished Spring Data repository scanning in 178 ms. Found 1 JPA repository interface.
+[api-employee-invex] - 2025-04-26 12:44:14.808 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize() - Tomcat initialized with port 8082 (http)
+[api-employee-invex] - 2025-04-26 12:44:14.835 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Initializing ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 12:44:14.841 [main] INFO  o.a.catalina.core.StandardService.log() - Starting service [Tomcat]
+[api-employee-invex] - 2025-04-26 12:44:14.847 [main] INFO  o.a.catalina.core.StandardEngine.log() - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[api-employee-invex] - 2025-04-26 12:44:14.996 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring embedded WebApplicationContext
+[api-employee-invex] - 2025-04-26 12:44:14.999 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext() - Root WebApplicationContext: initialization completed in 3542 ms
+[api-employee-invex] - 2025-04-26 12:44:15.457 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation() - HHH000204: Processing PersistenceUnitInfo [name: default]
+[api-employee-invex] - 2025-04-26 12:44:15.529 [main] INFO  org.hibernate.Version.logVersion() - HHH000412: Hibernate ORM core version 6.6.13.Final
+[api-employee-invex] - 2025-04-26 12:44:15.584 [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService() - HHH000026: Second-level cache disabled
+[api-employee-invex] - 2025-04-26 12:44:16.008 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer() - No LoadTimeWeaver setup: ignoring JPA class transformer
+[api-employee-invex] - 2025-04-26 12:44:16.067 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Starting...
+[api-employee-invex] - 2025-04-26 12:44:16.361 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast() - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@287ad0da
+[api-employee-invex] - 2025-04-26 12:44:16.364 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Start completed.
+[api-employee-invex] - 2025-04-26 12:44:16.414 [main] WARN  org.hibernate.orm.deprecation.constructDialect() - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[api-employee-invex] - 2025-04-26 12:44:16.462 [main] INFO  o.hibernate.orm.connections.pooling.initiateService() - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[api-employee-invex] - 2025-04-26 12:44:18.241 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService() - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[api-employee-invex] - 2025-04-26 12:44:18.448 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[api-employee-invex] - 2025-04-26 12:44:19.466 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[api-employee-invex] - 2025-04-26 12:44:20.266 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Starting ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 12:44:20.301 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start() - Tomcat started on port 8082 (http) with context path '/'
+[api-employee-invex] - 2025-04-26 12:44:20.335 [main] INFO  c.invex.employee.EmployeeApplication.logStarted() - Started EmployeeApplication in 10.165 seconds (process running for 10.951)
+[api-employee-invex] - 2025-04-26 12:47:20.397 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 12:47:20.397 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Initializing Servlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 12:47:20.400 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Completed initialization in 2 ms
+[api-employee-invex] - 2025-04-26 12:47:20.408 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 12:47:20.409 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 12:47:20.410 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
+[api-employee-invex] - 2025-04-26 12:47:20.411 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[api-employee-invex] - 2025-04-26 12:47:20.411 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-language:es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+[api-employee-invex] - 2025-04-26 12:47:20.412 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br, zstd
+[api-employee-invex] - 2025-04-26 12:47:20.412 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 12:47:20.412 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** upgrade-insecure-requests:1
+[api-employee-invex] - 2025-04-26 12:47:20.413 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** sec-fetch-dest:document
+[api-employee-invex] - 2025-04-26 12:47:20.413 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** sec-fetch-mode:navigate
+[api-employee-invex] - 2025-04-26 12:47:20.413 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** sec-fetch-site:none
+[api-employee-invex] - 2025-04-26 12:47:20.414 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** sec-fetch-user:?1
+[api-employee-invex] - 2025-04-26 12:47:20.414 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** priority:u=0, i
+[api-employee-invex] - 2025-04-26 12:47:20.414 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 12:47:21.097 [http-nio-8082-exec-2] INFO  o.s.api.AbstractOpenApiResource.getOpenApi() - Init duration for springdoc-openapi is: 602 ms
+[api-employee-invex] - 2025-04-26 12:47:21.226 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 12:47:21.227 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 12:47:21.227 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
+[api-employee-invex] - 2025-04-26 12:47:21.227 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:image/avif,image/webp,image/png,image/svg+xml,image/*;q=0.8,*/*;q=0.5
+[api-employee-invex] - 2025-04-26 12:47:21.228 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-language:es-MX,es;q=0.8,en-US;q=0.5,en;q=0.3
+[api-employee-invex] - 2025-04-26 12:47:21.228 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br, zstd
+[api-employee-invex] - 2025-04-26 12:47:21.229 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 12:47:21.229 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** referer:http://localhost:8082/v3/api-docs
+[api-employee-invex] - 2025-04-26 12:47:21.230 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** sec-fetch-dest:image
+[api-employee-invex] - 2025-04-26 12:47:21.230 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** sec-fetch-mode:no-cors
+[api-employee-invex] - 2025-04-26 12:47:21.231 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** sec-fetch-site:cross-site
+[api-employee-invex] - 2025-04-26 12:47:21.231 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** priority:u=6
+[api-employee-invex] - 2025-04-26 12:47:21.232 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 12:49:32.178 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 12:49:32.197 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:PostmanRuntime/7.43.3
+[api-employee-invex] - 2025-04-26 12:49:32.198 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:*/*
+[api-employee-invex] - 2025-04-26 12:49:32.199 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** postman-token:408bd4ff-5ba8-4de4-aade-da74f872896d
+[api-employee-invex] - 2025-04-26 12:49:32.200 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 12:49:32.200 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br
+[api-employee-invex] - 2025-04-26 12:49:32.201 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 12:49:32.201 [http-nio-8082-exec-6] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 12:49:32.203 [http-nio-8082-exec-6] INFO  c.i.e.a.s.e.SearchEmployeeService.getEmployees() - Execute service to search all employees that was saved.
+[api-employee-invex] - 2025-04-26 12:49:32.204 [http-nio-8082-exec-6] INFO  c.i.e.a.o.p.e.SearchEmployeePersistence.getEmployees() - Find all Employees
+[api-employee-invex] - 2025-04-26 12:49:32.625 [http-nio-8082-exec-6] INFO  c.i.e.a.o.p.e.SearchEmployeePersistence.getEmployees() - Convert Objects
+[api-employee-invex] - 2025-04-26 12:54:25.475 [background-preinit] INFO  o.h.validator.internal.util.Version.<clinit>() - HV000001: Hibernate Validator 8.0.2.Final
+[api-employee-invex] - 2025-04-26 12:54:25.625 [main] INFO  c.invex.employee.EmployeeApplication.logStarting() - Starting EmployeeApplication using Java 21.0.7 with PID 60222 (/home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex/target/classes started by r0g3r in /home/r0g3r/Documentos/ENTREVISTAS/NovaInvex/api-employe-invex)
+[api-employee-invex] - 2025-04-26 12:54:25.636 [main] INFO  c.invex.employee.EmployeeApplication.logStartupProfileInfo() - No active profile set, falling back to 1 default profile: "default"
+[api-employee-invex] - 2025-04-26 12:54:27.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[api-employee-invex] - 2025-04-26 12:54:27.517 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn() - Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+[api-employee-invex] - 2025-04-26 12:54:28.631 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize() - Tomcat initialized with port 8082 (http)
+[api-employee-invex] - 2025-04-26 12:54:28.651 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Initializing ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 12:54:28.659 [main] INFO  o.a.catalina.core.StandardService.log() - Starting service [Tomcat]
+[api-employee-invex] - 2025-04-26 12:54:28.660 [main] INFO  o.a.catalina.core.StandardEngine.log() - Starting Servlet engine: [Apache Tomcat/10.1.40]
+[api-employee-invex] - 2025-04-26 12:54:28.782 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring embedded WebApplicationContext
+[api-employee-invex] - 2025-04-26 12:54:28.784 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext() - Root WebApplicationContext: initialization completed in 3042 ms
+[api-employee-invex] - 2025-04-26 12:54:29.220 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation() - HHH000204: Processing PersistenceUnitInfo [name: default]
+[api-employee-invex] - 2025-04-26 12:54:29.407 [main] INFO  org.hibernate.Version.logVersion() - HHH000412: Hibernate ORM core version 6.6.13.Final
+[api-employee-invex] - 2025-04-26 12:54:29.485 [main] INFO  o.h.c.i.RegionFactoryInitiator.initiateService() - HHH000026: Second-level cache disabled
+[api-employee-invex] - 2025-04-26 12:54:30.144 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer() - No LoadTimeWeaver setup: ignoring JPA class transformer
+[api-employee-invex] - 2025-04-26 12:54:30.365 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Starting...
+[api-employee-invex] - 2025-04-26 12:54:31.012 [main] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast() - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b2db389
+[api-employee-invex] - 2025-04-26 12:54:31.018 [main] INFO  com.zaxxer.hikari.HikariDataSource.getConnection() - HikariPool-1 - Start completed.
+[api-employee-invex] - 2025-04-26 12:54:31.091 [main] WARN  org.hibernate.orm.deprecation.constructDialect() - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[api-employee-invex] - 2025-04-26 12:54:31.147 [main] INFO  o.hibernate.orm.connections.pooling.initiateService() - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.3
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[api-employee-invex] - 2025-04-26 12:54:33.026 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService() - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[api-employee-invex] - 2025-04-26 12:54:33.186 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[api-employee-invex] - 2025-04-26 12:54:34.042 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[api-employee-invex] - 2025-04-26 12:54:35.269 [main] INFO  o.a.coyote.http11.Http11NioProtocol.log() - Starting ProtocolHandler ["http-nio-8082"]
+[api-employee-invex] - 2025-04-26 12:54:35.316 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start() - Tomcat started on port 8082 (http) with context path '/'
+[api-employee-invex] - 2025-04-26 12:54:35.378 [main] INFO  c.invex.employee.EmployeeApplication.logStarted() - Started EmployeeApplication in 10.767 seconds (process running for 11.61)
+[api-employee-invex] - 2025-04-26 12:57:04.705 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log() - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 12:57:04.706 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Initializing Servlet 'dispatcherServlet'
+[api-employee-invex] - 2025-04-26 12:57:04.712 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet.initServletBean() - Completed initialization in 5 ms
+[api-employee-invex] - 2025-04-26 12:57:04.719 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 12:57:04.720 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:PostmanRuntime/7.43.3
+[api-employee-invex] - 2025-04-26 12:57:04.721 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:*/*
+[api-employee-invex] - 2025-04-26 12:57:04.721 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** postman-token:5955f259-f73a-4ded-b79c-44a0f52ea053
+[api-employee-invex] - 2025-04-26 12:57:04.722 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 12:57:04.722 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br
+[api-employee-invex] - 2025-04-26 12:57:04.723 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 12:57:04.723 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 12:57:04.773 [http-nio-8082-exec-2] INFO  c.i.e.a.s.e.SearchEmployeeService.getEmployees() - Execute service to search all employees that was saved.
+[api-employee-invex] - 2025-04-26 12:57:04.774 [http-nio-8082-exec-2] INFO  c.i.e.a.o.p.e.SearchEmployeePersistence.getEmployees() - Find all Employees
+[api-employee-invex] - 2025-04-26 12:57:05.105 [http-nio-8082-exec-2] INFO  c.i.e.a.o.p.e.SearchEmployeePersistence.getEmployees() - Convert Objects
+[api-employee-invex] - 2025-04-26 13:01:10.036 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 13:01:10.036 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** content-type:application/json
+[api-employee-invex] - 2025-04-26 13:01:10.036 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:PostmanRuntime/7.43.3
+[api-employee-invex] - 2025-04-26 13:01:10.037 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:*/*
+[api-employee-invex] - 2025-04-26 13:01:10.037 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** postman-token:8ec42275-1838-49a1-a0b3-17afe51384bc
+[api-employee-invex] - 2025-04-26 13:01:10.038 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 13:01:10.038 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br
+[api-employee-invex] - 2025-04-26 13:01:10.039 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 13:01:10.040 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** content-length:523
+[api-employee-invex] - 2025-04-26 13:01:10.041 [http-nio-8082-exec-4] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 13:01:10.289 [http-nio-8082-exec-4] INFO  c.i.e.a.s.e.CreateEmployeeService.createEmployee() - Execute employee service to save employee list.
+[api-employee-invex] - 2025-04-26 13:01:10.299 [http-nio-8082-exec-4] INFO  c.i.e.a.o.p.e.CreateEmployeePersistence.createEmployee() - Init process to mapper employee objects to save.
+[api-employee-invex] - 2025-04-26 13:01:10.301 [http-nio-8082-exec-4] INFO  c.i.e.a.o.p.e.CreateEmployeePersistence.createEmployee() - Save all objects employee.
+[api-employee-invex] - 2025-04-26 13:01:10.513 [http-nio-8082-exec-4] INFO  c.i.e.a.o.p.e.CreateEmployeePersistence.createEmployee() - Saved successfully.
+[api-employee-invex] - 2025-04-26 13:03:36.686 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 13:03:36.687 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:PostmanRuntime/7.43.3
+[api-employee-invex] - 2025-04-26 13:03:36.687 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:*/*
+[api-employee-invex] - 2025-04-26 13:03:36.687 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** postman-token:75f7ad34-8147-4679-9cb8-dfb6e32ba87c
+[api-employee-invex] - 2025-04-26 13:03:36.688 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 13:03:36.688 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br
+[api-employee-invex] - 2025-04-26 13:03:36.688 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 13:03:36.688 [http-nio-8082-exec-7] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 13:03:36.693 [http-nio-8082-exec-7] INFO  c.i.e.a.s.e.DeleteEmployeeService.deleteEmployee() - Execute service to delete employee with id:1
+[api-employee-invex] - 2025-04-26 13:03:36.696 [http-nio-8082-exec-7] INFO  c.i.e.a.o.p.e.DeleteEmployeePersistence.deleteEmployee() - find employee by ID.
+[api-employee-invex] - 2025-04-26 13:03:36.719 [http-nio-8082-exec-7] INFO  c.i.e.a.o.p.e.DeleteEmployeePersistence.deleteEmployee() - Delete employee.
+[api-employee-invex] - 2025-04-26 13:03:36.753 [http-nio-8082-exec-7] INFO  c.i.e.a.o.p.e.DeleteEmployeePersistence.deleteEmployee() - Deleted successfully
+[api-employee-invex] - 2025-04-26 13:04:54.923 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 13:04:54.924 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:PostmanRuntime/7.43.3
+[api-employee-invex] - 2025-04-26 13:04:54.924 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:*/*
+[api-employee-invex] - 2025-04-26 13:04:54.924 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** postman-token:704ec25c-cb8c-4729-931b-3ae33f578205
+[api-employee-invex] - 2025-04-26 13:04:54.925 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 13:04:54.925 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br
+[api-employee-invex] - 2025-04-26 13:04:54.925 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 13:04:54.925 [http-nio-8082-exec-1] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 13:04:54.926 [http-nio-8082-exec-1] INFO  c.i.e.a.s.e.SearchEmployeeService.getEmployees() - Execute service to search all employees that was saved.
+[api-employee-invex] - 2025-04-26 13:04:54.927 [http-nio-8082-exec-1] INFO  c.i.e.a.o.p.e.SearchEmployeePersistence.getEmployees() - Find all Employees
+[api-employee-invex] - 2025-04-26 13:04:54.939 [http-nio-8082-exec-1] INFO  c.i.e.a.o.p.e.SearchEmployeePersistence.getEmployees() - Convert Objects
+[api-employee-invex] - 2025-04-26 13:05:30.476 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***Headers of Request****
+[api-employee-invex] - 2025-04-26 13:05:30.477 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** content-type:application/json
+[api-employee-invex] - 2025-04-26 13:05:30.477 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** user-agent:PostmanRuntime/7.43.3
+[api-employee-invex] - 2025-04-26 13:05:30.477 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept:*/*
+[api-employee-invex] - 2025-04-26 13:05:30.477 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** postman-token:a0601577-d008-4744-af9c-2e474582d8ee
+[api-employee-invex] - 2025-04-26 13:05:30.478 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** host:localhost:8082
+[api-employee-invex] - 2025-04-26 13:05:30.478 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** accept-encoding:gzip, deflate, br
+[api-employee-invex] - 2025-04-26 13:05:30.478 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** connection:keep-alive
+[api-employee-invex] - 2025-04-26 13:05:30.478 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - Header ** content-length:236
+[api-employee-invex] - 2025-04-26 13:05:30.479 [http-nio-8082-exec-2] INFO  c.i.e.i.c.ControllerConfiguration.doFilter() - ***=====================****
+[api-employee-invex] - 2025-04-26 13:05:30.483 [http-nio-8082-exec-2] INFO  c.i.e.a.s.e.UpdateEmployeeService.updateEmployee() - Execute service to update employee.
+[api-employee-invex] - 2025-04-26 13:05:30.484 [http-nio-8082-exec-2] INFO  c.i.e.a.s.e.UpdateEmployeeService.updateEmployee() - Validate if employee object isn't null.
+[api-employee-invex] - 2025-04-26 13:05:30.486 [http-nio-8082-exec-2] INFO  c.i.e.a.s.e.UpdateEmployeeService.updateEmployee() - Validate if employee id isn't null.
+[api-employee-invex] - 2025-04-26 13:05:30.488 [http-nio-8082-exec-2] INFO  c.i.e.a.o.p.e.UpdateEmployeePersistence.updateEmployee() - find employee by id
+[api-employee-invex] - 2025-04-26 13:05:30.495 [http-nio-8082-exec-2] INFO  c.i.e.a.o.p.e.UpdateEmployeePersistence.updateEmployee() - Change information of employee
+[api-employee-invex] - 2025-04-26 13:05:30.498 [http-nio-8082-exec-2] INFO  c.i.e.a.o.p.e.UpdateEmployeePersistence.updateEmployee() - Save changes
+[api-employee-invex] - 2025-04-26 13:05:30.504 [http-nio-8082-exec-2] INFO  c.i.e.a.o.p.e.UpdateEmployeePersistence.updateEmployee() - Updated successfully
